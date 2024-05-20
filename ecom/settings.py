@@ -14,7 +14,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG')
+DEBUG = config("DEBUG")
 
 ALLOWED_HOSTS = config("ALLOWED_HOSTS").split(",")
 
@@ -49,10 +49,7 @@ ROOT_URLCONF = 'ecom.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-            # os.path.join(BASE_DIR, 'template'),
-            # os.path.join(BASE_DIR, 'template/payment'),
-        ],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -81,7 +78,7 @@ DATABASES = {
 }
 
 # Added Manually
-DATABASES['default'] = dj_database_url.parse("postgres://gaurav_mahawar_user:8icy2cELojgPns07FVc2fCKVH2ixtcjs@dpg-cp57qs8cmk4c73eu3og0-a/gaurav_mahawar")
+# DATABASES['default'] = dj_database_url.parse("postgres://gaurav_mahawar_user:8icy2cELojgPns07FVc2fCKVH2ixtcjs@dpg-cp57qs8cmk4c73eu3og0-a.oregon-postgres.render.com/gaurav_mahawar")
 
 
 # Password validation
