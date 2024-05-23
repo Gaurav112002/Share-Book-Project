@@ -78,7 +78,7 @@ DATABASES = {
 }
 
 # Added Manually
-# DATABASES['default'] = dj_database_url.parse("postgres://gaurav_mahawar_user:8icy2cELojgPns07FVc2fCKVH2ixtcjs@dpg-cp57qs8cmk4c73eu3og0-a.oregon-postgres.render.com/gaurav_mahawar")
+DATABASES['default'] = dj_database_url.parse(config(DATABASE_URL))
 
 
 # Password validation
